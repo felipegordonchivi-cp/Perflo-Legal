@@ -42,18 +42,22 @@
 </style>
 </head>
 <body>
+
 <div class="header">
   <div class="logo">
-    <div class="logo-mark"><span>⚡</span></div>
+    <div class="logo-mark"><svg width="22" height="22" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="pg" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#1E2D40"/><stop offset="100%" stop-color="#4A90D9"/></linearGradient></defs><path d="M32 22 L32 78 L42 78 L42 58 L58 58 Q74 58 74 40 Q74 22 58 22 Z M42 32 L57 32 Q63 32 63 40 Q63 48 57 48 L42 48 Z" fill="url(#pg)"/><path d="M32 68 L28 78 L36 78 Z" fill="#1E2D40" opacity="0.7"/></svg></div>
     <span class="logo-name">Perf<em>lo</em></span>
   </div>
   <h1>Política de Privacidad</h1>
   <p>Última actualización: junio de 2026 · Vigente desde: junio de 2026</p>
 </div>
+
 <div class="container">
+
   <div class="highlight">
     <strong>Resumen en términos simples:</strong> Perflo almacena tu información profesional localmente en tu dispositivo. No vendemos tus datos. No los compartimos con anunciantes. Los usamos únicamente para que la app funcione.
   </div>
+
   <div class="toc">
     <h2>Contenido</h2>
     <ol>
@@ -68,25 +72,60 @@
       <li><a href="#contacto">Contacto</a></li>
     </ol>
   </div>
+
   <section id="quien">
     <h2 class="section-title">1. ¿Quién es el responsable?</h2>
     <p>Perflo es desarrollado y operado por su creador individual (en adelante "nosotros", "Perflo"). Para cualquier consulta relacionada con privacidad, puedes contactarnos en <a href="mailto:legal@perflo.app">legal@perflo.app</a>.</p>
     <p>Al descargar y usar la aplicación Perflo, aceptas las prácticas descritas en esta Política de Privacidad.</p>
   </section>
+
   <section id="datos">
     <h2 class="section-title">2. ¿Qué datos recopilamos?</h2>
     <table>
-      <tr><th>Categoría</th><th>Datos específicos</th><th>¿Requerido?</th></tr>
-      <tr><td><strong>Perfil profesional</strong></td><td>Nombre, apellido, título profesional, email, teléfono, ubicación, LinkedIn</td><td>Sí (para crear CV)</td></tr>
-      <tr><td><strong>Experiencia laboral</strong></td><td>Empresa, cargo, fechas, descripción de logros</td><td>Opcional</td></tr>
-      <tr><td><strong>Formación</strong></td><td>Institución, grado, área, año de graduación</td><td>Opcional</td></tr>
-      <tr><td><strong>Habilidades</strong></td><td>Lista de habilidades profesionales</td><td>Opcional</td></tr>
-      <tr><td><strong>Texto de vacantes</strong></td><td>Texto de ofertas laborales que el usuario ingresa para análisis</td><td>Para análisis</td></tr>
-      <tr><td><strong>Datos de uso</strong></td><td>Número de análisis realizados, plan seleccionado</td><td>Para funcionalidad</td></tr>
-      <tr><td><strong>Datos de pago</strong></td><td>Gestionados exclusivamente por RevenueCat / App Store / Google Play</td><td>Solo plan pago</td></tr>
+      <tr>
+        <th>Categoría</th>
+        <th>Datos específicos</th>
+        <th>¿Requerido?</th>
+      </tr>
+      <tr>
+        <td><strong>Perfil profesional</strong></td>
+        <td>Nombre, apellido, título profesional, email, teléfono, ubicación, LinkedIn</td>
+        <td>Sí (para crear CV)</td>
+      </tr>
+      <tr>
+        <td><strong>Experiencia laboral</strong></td>
+        <td>Empresa, cargo, fechas, descripción de logros</td>
+        <td>Opcional</td>
+      </tr>
+      <tr>
+        <td><strong>Formación</strong></td>
+        <td>Institución, grado, área, año de graduación</td>
+        <td>Opcional</td>
+      </tr>
+      <tr>
+        <td><strong>Habilidades</strong></td>
+        <td>Lista de habilidades profesionales</td>
+        <td>Opcional</td>
+      </tr>
+      <tr>
+        <td><strong>Texto de vacantes</strong></td>
+        <td>Texto de ofertas laborales que el usuario ingresa para análisis</td>
+        <td>Para análisis</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de uso</strong></td>
+        <td>Número de análisis realizados, plan seleccionado</td>
+        <td>Para funcionalidad</td>
+      </tr>
+      <tr>
+        <td><strong>Datos de pago</strong></td>
+        <td>Gestionados exclusivamente por RevenueCat / App Store / Google Play</td>
+        <td>Solo plan pago</td>
+      </tr>
     </table>
     <p><strong>No recopilamos:</strong> datos de geolocalización, contactos, datos de salud, historial de navegación, ni ningún dato que no sea necesario para el funcionamiento de la app.</p>
   </section>
+
   <section id="uso">
     <h2 class="section-title">3. ¿Para qué usamos tus datos?</h2>
     <ul>
@@ -100,50 +139,92 @@
       <strong>Nunca usamos tus datos para:</strong> publicidad, perfilado comercial, venta a terceros, ni para ningún propósito distinto a hacer funcionar la app.
     </div>
   </section>
+
   <section id="almacenamiento">
     <h2 class="section-title">4. ¿Dónde se almacenan tus datos?</h2>
-    <p>La totalidad de tu información profesional se almacena <strong>localmente en tu dispositivo</strong> usando AsyncStorage. Tus datos no se transmiten a ningún servidor de Perflo. Si desinstallas la app, todos tus datos son eliminados permanentemente.</p>
+    <p>La totalidad de tu información profesional (perfil, CV, historial de análisis) se almacena <strong>localmente en tu dispositivo</strong> usando AsyncStorage, la solución de almacenamiento nativa de React Native.</p>
+    <p>Esto significa que:</p>
+    <ul>
+      <li>Tus datos no se transmiten a ningún servidor de Perflo.</li>
+      <li>Si desinstallas la app, todos tus datos son eliminados permanentemente.</li>
+      <li>Si cambias de dispositivo, necesitarás crear tu perfil nuevamente (en una versión futura ofreceremos sincronización opcional).</li>
+      <li>El análisis de texto de vacantes ocurre completamente en tu dispositivo, sin conexión a internet.</li>
+    </ul>
   </section>
+
   <section id="terceros">
     <h2 class="section-title">5. Terceros y servicios externos</h2>
+    <p>Perflo utiliza los siguientes servicios de terceros, cada uno con su propia política de privacidad:</p>
     <table>
-      <tr><th>Servicio</th><th>Propósito</th><th>Datos que recibe</th></tr>
-      <tr><td><strong>RevenueCat</strong></td><td>Gestión de suscripciones y pagos</td><td>ID de dispositivo anónimo, estado de suscripción</td></tr>
-      <tr><td><strong>Apple App Store</strong></td><td>Distribución y pagos iOS</td><td>Según política de Apple</td></tr>
-      <tr><td><strong>Google Play Store</strong></td><td>Distribución y pagos Android</td><td>Según política de Google</td></tr>
-      <tr><td><strong>ML Kit (Google)</strong></td><td>OCR para lectura de imágenes</td><td>Procesamiento local, sin transmisión</td></tr>
+      <tr>
+        <th>Servicio</th>
+        <th>Propósito</th>
+        <th>Datos que recibe</th>
+      </tr>
+      <tr>
+        <td><strong>RevenueCat</strong></td>
+        <td>Gestión de suscripciones y pagos</td>
+        <td>ID de dispositivo anónimo, estado de suscripción</td>
+      </tr>
+      <tr>
+        <td><strong>Apple App Store</strong></td>
+        <td>Distribución y pagos iOS</td>
+        <td>Según política de Apple</td>
+      </tr>
+      <tr>
+        <td><strong>Google Play Store</strong></td>
+        <td>Distribución y pagos Android</td>
+        <td>Según política de Google</td>
+      </tr>
+      <tr>
+        <td><strong>ML Kit (Google)</strong></td>
+        <td>OCR para lectura de imágenes</td>
+        <td>Procesamiento local, sin transmisión</td>
+      </tr>
     </table>
+    <p>No integramos redes de publicidad, plataformas de analytics de terceros, ni herramientas de rastreo.</p>
   </section>
+
   <section id="derechos">
     <h2 class="section-title">6. Tus derechos</h2>
+    <p>Tienes derecho a:</p>
     <ul>
       <li><strong>Acceder</strong> a toda tu información (visible directamente en la app).</li>
-      <li><strong>Corregir</strong> cualquier dato desde el editor de perfil.</li>
-      <li><strong>Eliminar</strong> toda tu información desinstalando la app.</li>
+      <li><strong>Corregir</strong> cualquier dato en cualquier momento desde el editor de perfil.</li>
+      <li><strong>Eliminar</strong> toda tu información desinstalando la app o usando la opción "Limpiar datos" en configuración.</li>
       <li><strong>Portabilidad:</strong> Exportar tu CV en PDF o Word en cualquier momento.</li>
-      <li><strong>Cancelar</strong> tu suscripción desde App Store o Google Play en cualquier momento.</li>
+      <li><strong>Cancelar</strong> tu suscripción desde la configuración de tu dispositivo (App Store o Google Play) en cualquier momento.</li>
     </ul>
-    <p>Escríbenos a <a href="mailto:legal@perflo.app">legal@perflo.app</a> para cualquier consulta.</p>
+    <p>Para ejercer cualquier derecho o hacer una consulta, escríbenos a <a href="mailto:legal@perflo.app">legal@perflo.app</a>.</p>
   </section>
+
   <section id="menores">
     <h2 class="section-title">7. Menores de edad</h2>
-    <p>Perflo no está dirigida a personas menores de 16 años. No recopilamos intencionalmente información de menores.</p>
+    <p>Perflo no está dirigida a personas menores de 16 años. No recopilamos intencionalmente información de menores. Si eres padre/madre o tutor y crees que tu hijo ha proporcionado información personal, contáctanos para eliminarla.</p>
   </section>
+
   <section id="cambios">
     <h2 class="section-title">8. Cambios a esta política</h2>
-    <p>Podemos actualizar esta política ocasionalmente. Notificaremos dentro de la app y actualizaremos la fecha en este documento.</p>
+    <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Cuando lo hagamos, notificaremos dentro de la app y actualizaremos la fecha en la parte superior de este documento. Te recomendamos revisar esta página periódicamente.</p>
+    <p>El uso continuado de Perflo después de publicar cambios constituye aceptación de la política actualizada.</p>
   </section>
+
   <section id="contacto">
     <h2 class="section-title">9. Contacto</h2>
+    <p>Si tienes preguntas, comentarios o inquietudes sobre esta Política de Privacidad, contáctanos:</p>
   </section>
+
   <div class="contact-box">
     <h3>¿Tienes preguntas?</h3>
     <p>Estamos aquí para ayudarte. Respondemos en menos de 48 horas.</p>
     <a href="mailto:legal@perflo.app">legal@perflo.app</a>
   </div>
+
 </div>
+
 <div class="footer">
   © 2026 Perflo · <a href="./terms.html" style="color:#4A90D9;text-decoration:none">Términos de Servicio</a> · <a href="./privacy-policy.html" style="color:#4A90D9;text-decoration:none">Política de Privacidad</a>
 </div>
+
 </body>
 </html>
